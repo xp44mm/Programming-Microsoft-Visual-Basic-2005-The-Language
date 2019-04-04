@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PInvokeDemo", "PInvokeDemo\PInvokeDemo.vbproj", "{629BA5B9-A919-4450-B77B-D2EE34201F76}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ComClient", "ComClient\ComClient.vbproj", "{81EC5D74-44B7-4BC0-B7AF-67C5C4957145}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleNetComponent", "SampleNetComponent\SampleNetComponent.vbproj", "{0DCA34C4-D10E-4A2E-B32F-C5A5EDFC9CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{629BA5B9-A919-4450-B77B-D2EE34201F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629BA5B9-A919-4450-B77B-D2EE34201F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629BA5B9-A919-4450-B77B-D2EE34201F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{629BA5B9-A919-4450-B77B-D2EE34201F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EC5D74-44B7-4BC0-B7AF-67C5C4957145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EC5D74-44B7-4BC0-B7AF-67C5C4957145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EC5D74-44B7-4BC0-B7AF-67C5C4957145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EC5D74-44B7-4BC0-B7AF-67C5C4957145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCA34C4-D10E-4A2E-B32F-C5A5EDFC9CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCA34C4-D10E-4A2E-B32F-C5A5EDFC9CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCA34C4-D10E-4A2E-B32F-C5A5EDFC9CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCA34C4-D10E-4A2E-B32F-C5A5EDFC9CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

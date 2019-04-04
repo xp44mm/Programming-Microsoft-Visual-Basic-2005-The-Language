@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="DataObjectLibrary.DataObjectHelper">
+    <Position X="5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataObjectHelper.vb</FileName>
+      <HashCode>AACgAAAAQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataObjectLibrary.DataObjectFactory">
+    <Position X="2.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataObjectFactory.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAQAAEAAgIAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="DataCompanions" Hidden="true" />
+      <Field Name="DataObjects" Hidden="true" />
+      <Field Name="m_Configuration" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="DataObjectLibrary.DataObjectCompanionAttribute">
+    <Position X="2.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataObjectCompanionAttribute.vb</FileName>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="m_TypeName" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="DataObjectLibrary.DataObjectCommand">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataObjectCommand.vb</FileName>
+      <HashCode>AAAAAAAAAAACAAAAgAAAAAQAAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataObjectLibrary.DataObjectAttribute" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataObjectAttribute.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAEAAAQAAAAAQAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="CompareTo" Hidden="true" />
+      <Field Name="m_Configuration" Hidden="true" />
+      <Field Name="m_Table" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DataObjectLibrary.IDataObject">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DataObjectLibrary.IDataObject(Of TDataSet)">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces.vb</FileName>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DataObjectLibrary.IDataObjectCompanion">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces.vb</FileName>
+      <HashCode>AACgAAAAQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

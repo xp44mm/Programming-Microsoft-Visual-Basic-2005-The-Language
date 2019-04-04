@@ -1,0 +1,7 @@
+IH 1   12/04/2005 John Douglas
+ID 12    Monitor XY        129.99  
+ID 4     Printer YZ        212.00  
+ID 3     Hard disks Z4     159.00  
+IH 2   12/06/2005 Robert Smith       
+ID 8     Monitor XY        129.99  
+ID 2     Notebook ABC      850.00  

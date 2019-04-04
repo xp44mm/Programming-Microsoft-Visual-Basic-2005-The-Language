@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SecureStringDemo", "SecureStringDemo\SecureStringDemo.vbproj", "{E3E286DC-FBA9-4188-AF7B-E9EACFEC5CA3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NetBasicTypes", "NetBasicTypes\NetBasicTypes.vbproj", "{911270F9-09A3-44D9-8F3E-571CBD1B010B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3E286DC-FBA9-4188-AF7B-E9EACFEC5CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E286DC-FBA9-4188-AF7B-E9EACFEC5CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E286DC-FBA9-4188-AF7B-E9EACFEC5CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E286DC-FBA9-4188-AF7B-E9EACFEC5CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911270F9-09A3-44D9-8F3E-571CBD1B010B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911270F9-09A3-44D9-8F3E-571CBD1B010B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911270F9-09A3-44D9-8F3E-571CBD1B010B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911270F9-09A3-44D9-8F3E-571CBD1B010B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

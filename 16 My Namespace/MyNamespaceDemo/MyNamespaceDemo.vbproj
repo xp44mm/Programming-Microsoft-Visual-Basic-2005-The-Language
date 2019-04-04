@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{093E23C6-21BA-4BA1-A2A3-FDA2F9D9AB0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MyNamespaceDemo.My.MyApplication</StartupObject>
+    <RootNamespace>MyNamespaceDemo</RootNamespace>
+    <AssemblyName>MyNamespaceDemo</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MyNamespaceDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MyNamespaceDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ComputerInfoForm.Designer.vb">
+      <DependentUpon>ComputerInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSystemForm.Designer.vb">
+      <DependentUpon>FileSystemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FileSystemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyApplicationForm.Designer.vb">
+      <DependentUpon>MyApplicationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyApplicationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyComputerForm.Designer.vb">
+      <DependentUpon>MyComputerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyComputerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyData.vb" />
+    <Compile Include="MyExtensions.vb" />
+    <Compile Include="MyExtensionsForm.Designer.vb">
+      <DependentUpon>MyExtensionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyExtensionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkForm.Designer.vb">
+      <DependentUpon>NetworkForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistryForm.Designer.vb">
+      <DependentUpon>RegistryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourcesForm.Designer.vb">
+      <DependentUpon>ResourcesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResourcesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComputerInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComputerInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileSystemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileSystemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyApplicationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyApplicationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComputerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyComputerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyExtensionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyExtensionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NetworkForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegistryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourcesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourcesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webtips from devx.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soap Bubbles.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows XP Logon Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Colors.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Logo CA.jpg" />
+    <None Include="Resources\resources text.doc" />
+    <None Include="Resources\resources text.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusyIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

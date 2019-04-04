@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<groups>
+   <group text="Substitutions" toolTip="" includeBits="2">
+      <item text="N-th group" toolTip="Substitutes the last substring matched by group number N." regex="$§N§" />
+      <item text="Named group" toolTip="Substitutes the last substring matched by a (?&lt;name>) group." regex="${§name§}" />
+      <item text="Entire match" toolTip="Substitutes the entire match." regex="$0" />
+      <item text="Last captured group" toolTip="Substitutes the last captured string." regex="$+" />
+      <item text="-" />
+      <item text="Entire source string" toolTip="Substitutes the entire source string." regex="$_" />
+      <item text="Source string before match" toolTip="Substitutes the portion of the source string up to the match." regex="$`" />
+      <item text="Source string after match" toolTip="Substitutes the portion of the source string that follows the match." regex="$'" />
+   </group>
+   <group text="Character escapes" toolTip="" includeBits="3">
+      <item text="Tab" toolTip="The tab character: \t" regex="\t" />
+      <item text="Carriage return" toolTip="The carriage return character: \r" regex="\r" />
+      <item text="Newline" toolTip="The newline character: \n" regex="\n" />
+      <item text="Escape" toolTip="The escape character: \e" regex="\e" />
+      <item text="Vertical Tab" toolTip="The vertical tab character: \v" regex="\v" />
+      <item text="Form-Feed" toolTip="The form-feed character: \f" regex="\f" />
+      <item text="Bell alarm" toolTip="The bell alarm character: \a" regex="\a" />
+      <item text="-" />
+      <item text="ASCII character NN (octal)" toolTip="An ASCII character in octal notation" regex="\0§nn§" />
+      <item text="ASCII character NN (hex)" toolTip="An ASCII character in hex notation" regex="\0x§nn§" />
+      <item text="Unicode character NNNN" toolTip="A Unicode character in hex notation" regex="\u§nnnn§" />
+      <item text="ASCII control character Ctrl-C" toolTip="An ASCII control character" regex="\cCHAR" />
+      <item text="-" />
+      <item text="Space" toolTip="The space character" regex="\x20" />
+      <item text="Open parenthesis" toolTip="The ( character" regex="\(" />
+      <item text="Close parenthesis" toolTip="The ) character" regex="\)" />
+      <item text="Open bracket" toolTip="The [ character" regex="\[" />
+      <item text="Close bracket" toolTip="The ] character" regex="\]" />
+   </group>
+   <group text="Character classes" toolTip="" includeBits="1">
+      <item text="Any character ." toolTip="Any character (except newline if using Multiline option)" regex="." />
+      <item text="A character in a list" toolTip="Any character in the list between square brackets" regex="[§list§]" />
+      <item text="A character not in a list" toolTip="Any character not in the list between square brackets" regex="[^§list§]" />
+      <item text="-" />
+      <item text="Word character" toolTip="An alphabetical character, a digit, or an underscore.§Same as [A-Za-z0-9_]." regex="\w" />
+      <item text="Whitespace character" toolTip="A space, tab, carriage-return, newline, form-feed,§or vertical form-feed character. Same As [ \f\n\r\t\v]." regex="\s" />
+      <item text="Decimal digit" toolTip="A decimal digit character. Same As [0-9]." regex="\d" />
+      <item text="Non-word character" toolTip="A character other than an alphabetical character, a digit,§or an underscore. Same as [^A-Za-z0-9_]." regex="\W" />
+      <item text="Non-whitespace character" toolTip="A character other than a space, tab, carriage-return, newline,§form-feed, or vertical form-feed character. Same As [^ \f\n\r\t\v]." regex="\S" />
+      <item text="Non-decimal digit" toolTip="A character other than a decimal digit character.§Same As [^0-9]." regex="\D" />
+      <item text="-" />
+      <item text="Unicode character class" toolTip="A character in the specified Unicode class" regex="\p{§name§}" />
+      <item text="Non-Unicode character class" toolTip="A character not in the specified Unicode class" regex="\P{§name§}" />
+   </group>
+   <group text="Atomic zero-width assertions" toolTip="" includeBits="1">
+      <item text="Start of line" toolTip="The beginning of line, or the beginning of §string if not using Multiline option" regex="^" />
+      <item text="End of line" toolTip="The end of line, or the end of string if §not using Multiline option" regex="$" />
+      <item text="Start of string" toolTip="The beginning of string. §Like ^ but ignores the Multiline option." regex="\A" />
+      <item text="End of string" toolTip="The end of string or the position before §the newline at the end of the line.§Like $ but ignores the Multiline option." regex="\Z" />
+      <item text="End of string (exactly)" toolTip="Exactly the end of string, §whether or not there is a newline character. §Ignores the Multiline option." regex="\Z" />
+      <item text="Search start position" toolTip="The position where the search started. §usually one character after the point §at which the previous search ended" regex="\G" />
+      <item text="Word boundary" toolTip="The boundary between alphanumeric non-alphanumeric characters. §It indicates the first and last characters of a word delimited §by spaces or other punctuation symbols." regex="\b" />
+      <item text="Non-word boundary" toolTip="Not on a word boundary" regex="\B" />
+   </group>
+   <group text="Quantifiers" toolTip="" includeBits="1">
+      <item text="Zero or one matches" toolTip="An optional item." regex="?" />
+      <item text="Zero or more matches" toolTip="An optional item that can be repeated as many times as desired." regex="*" />
+      <item text="One or more matches" toolTip="An item that must occur at least once and §can be repeated as many times as desired." regex="+" />
+      <item text="Exactly N matches" toolTip="An item that is repeated exactly N times." regex="{§N§}" />
+      <item text="At least N matches" toolTip="An item that is repeated N or more times." regex="{§N§,}" />
+      <item text="Between N and M matches" toolTip="An item that is repeated at least N times §and no more than M times." regex="{§N§,M}" />
+      <item text="-" />
+      <item text="Zero or one matches (lazy)" toolTip="Zero repeats if possible, or one." regex="??" />
+      <item text="Zero or more matches (lazy)" toolTip="The first match that consumes as few §repeats as possible." regex="*?" />
+      <item text="One or more matches (lazy)" toolTip="The first match that consumes as few §repeats as possible, but at least one." regex="+?" />
+      <item text="At least N matches (lazy)" toolTip="As few repeats as possible, but at least N." regex="{§N§,}?" />
+      <item text="Between N and M matches (lazy)" toolTip="As few repeats as possible, but between N and M." regex="{§N§,M}?" />
+   </group>
+   <group text="Groups" toolTip="" includeBits="1">
+      <item text="Capture" toolTip="Captures the matched substring. §Captures are numbered starting at 1." regex="(§expr§)" />
+      <item text="Named capture" toolTip="Captures the subexpression and assigns it a name. §The name must not contain any punctuation symbols." regex="(?&lt;§name§>expr)" />
+      <item text="Non-capturing group" toolTip="A group that doesn't appear in the Groups collection of the Match object." regex="(?:§expr§)" />
+      <item text="-" />
+      <item text="Positive look-ahead assertion" toolTip="Continues match only if the subexpression matches §at this position on the right." regex="(?=§expr§)"/>
+      <item text="Negative look-ahead assertion" toolTip="Continues match only if the subexpression doesn't match §at this position on the right." regex="(?!§expr§)"/>
+      <item text="Positive look-behind assertion" toolTip="Continues match only if the subexpression matches §at this position on the left." regex="(?&lt;=§expr§)"/>
+      <item text="Negative look-behind assertion" toolTip="Continues match only if the subexpression doesn't match §at this position on the left." regex="(?!§expr§)"/>
+      <item text="Non-backtracking subexpression" toolTip="The subexpression is fully matched once, §and it doesn’t participate in backtracking." regex="(?>§expr§)"/>
+      <item text="Balancing group" toolTip="Deletes the definition of the previously defined group name2 and §stores in group name1 the interval between the previously defined §name2 group and the current group. §If no group name2 is defined, the match backtracks. " regex="(?&lt;§name1§-name2>expr)"/>
+      <item text="-" />
+      <item text="Backreference to N-th group" toolTip="A backreference to the N-th ordered group.§N can have one or two digits." regex="\§NN§"/>
+      <item text="Backreference to named group" toolTip="A backreference to a named group." regex="\k&lt;§name§>"/>
+      <item text="-" />
+      <item text="Case-sensitive mode" toolTip="An expression evaluated in case-sensitive mode." regex="(?-i:§expr§)"/>
+      <item text="Case-insensitive mode" toolTip="An expression evaluated in case-insensitive mode." regex="(?i:§expr§)"/>
+      <item text="Singleline mode" toolTip="An expression evaluated in Singleline mode." regex="(?s:§expr§)"/>
+      <item text="Multiline mode" toolTip="An expression evaluated in Multiline mode." regex="(?m:§expr§)"/>
+   </group>
+   <group text="Alternating constructs" toolTip="" includeBits="1">
+      <item text="Either/or" toolTip="Either first argument or second argument. §Leftmost successful match wins." regex="|§expr§" />
+      <item text="Condition on expression" toolTip="Matches the yes part if the expression matches at §this point; otherwise, matches the no part. §The expression is turned into a zero-width assertion." regex="(?(§expr§)yes|no)" />
+      <item text="Condition on named group" toolTip="Matches the yes part if the named capture string §has a match; otherwise, matches the no part. §The no part can be omitted." regex="(?(§name§)yes|no)" />
+   </group>
+   <group text="Other" toolTip="" includeBits="1">
+      <item text="Inline comment" toolTip="The text that follows the # sign and continues §until the first closing ) character is ignored." regex="(?# comment)" />
+      <item text="X-mode comment" toolTip="the text that follows the # sign until the end §of line is ignored. This construct requires that the x option §or the RegexOptions.IgnorePatternWhiteSpace enumerated option be activated." regex="# " />
+      <item text="-" />
+      <item text="Enable case-sensitive mode" toolTip="Enables the case-sensitive mode." regex="(?i)" />
+      <item text="Disable case-sensitive mode" toolTip="Disables the case-sensitive mode." regex="(?-i)" />
+      <item text="Enable SingleLine mode" toolTip="Enables the SingleLine  mode." regex="(?s)" />
+      <item text="Disable SingleLine mode" toolTip="Disables the SingleLine  mode." regex="(?-s)" />
+      <item text="Enable Multiline mode" toolTip="Enables the Multiline mode." regex="(?m)" />
+      <item text="Disable Multiline mode" toolTip="Disables the Multiline mode." regex="(?-m)" />
+      <item text="Enable Explicit capture mode" toolTip="Enables the Multiline mode." regex="(?n)" />
+      <item text="Disable Explicit capture mode" toolTip="Disables the Multiline mode." regex="(?-n)" />
+      <item text="Enable IgnorePatternWhitespace mode" toolTip="Enables the IgnorePatternWhitespace mode." regex="(?x)" />
+      <item text="Disable IgnorePatternWhitespace mode" toolTip="Disables the IgnorePatternWhitespace mode." regex="(?-x)" />
+   </group>
+   <group text="-" includeBits="1" />
+   <group text="Numbers" toolTip="" includeBits="1">
+      <item text="Positive integer" toolTip="A positive integer, without a leading sign." regex="\d+" />
+      <item text="Integer" toolTip="A positive or negative integer with an optional sign." regex="[+-]?\d+" />
+      <item text="Floating-point" toolTip="A floating-point number whose sign and decimal portion are optional." regex="[+-]?\d+(\.\d+)?" />
+      <item text="Exponential format" toolTip="A floating-point number that can be optionally expressed in exponential format (e.g., 1.23E+12); the mantissa sign and the exponent sign are optional." regex="[+-]?\d+(\.\d+)?(E[+-]?\d+)?" />
+      <item text="Hexadecimal" toolTip="A hexadecimal number." regex="[0-9A-Fa-f]+" />
+      <item text="-" />
+      <item text="Integer in range 0-99" toolTip="An integer number in the range 0-99." regex="\d{1,2}" />
+      <item text="Integer in range 1-99" toolTip="An integer number in the range 1-99." regex="(?!0)\d{1,2}" />
+      <item text="Integer in range 0-255" toolTip="An integer number in the range 0-255." regex="(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)" />
+   </group>
+   <group text="Strings" toolTip="" includeBits="1">
+      <item text="Word (alphabetic)" toolTip="A sequence of alphabetic characters." regex="\b[A-Za-z]+\b" />
+      <item text="Word (alphanumeric)" toolTip="A sequence of alphanumerical and underscore characters." regex="\b\w+\b" />
+      <item text="All-uppercase word" toolTip="A sequence of uppercase alphabetic characters." regex="\b[A-Z]+\b" />
+      <item text="Proper name" toolTip="A proper name (initial capped, then all lowercase characters)." regex="\b[A–Z][a–z]+\b" />
+      <item text="Last name" toolTip="A last name (initial capped, can contain other uppercase characters §and apostrophes, as in O’Brian)." regex="\b[A–Z][A–Za–z']+\b" />
+      <item text="-" />
+      <item text="Word not longer than NN chars" toolTip="A word of NN characters or fewer." regex="\b[A-Za-z]{1,§NN§}\b" />
+      <item text="Word of at least NN chars" toolTip="A word of NN characters or more" regex="\b[A–Za–z]{§NN§,}\b" />
+      <item text="-" />
+      <item text="Quoted string" toolTip="A quoted string enclosed in either single or double quotation marks." regex="(?&lt;q>[&quot;']).*?\k&lt;q>" />
+      <item text="VB/C# identifier" toolTip="A valid Visual Basic and C# identifier that begins with a letter or §underscores and optionally continues with letters, digits, or underscores." regex="\b[A-Za–z_]\w*\b" />
+      <item text="Words not in list" toolTip="Words other than those in a list. Useful to avoid noise words, §such as articles, conjunctions, etc." regex="\b(?!(the|a|an|and|or|on|of|with)\b)\w+" />
+      <item text="Proximity search" toolTip="Words that aren't apart for more than NN other words." regex="\b§word1§(\W+\w+){0,NN}\W+\bword2\b" />
+   </group>
+   <group text="Dates and times" toolTip="" includeBits="1">
+      <item text="U.S. date" toolTip="A U.S. date in the mm-dd-yyyy or mm/dd/yyyy format. §Month and day numbers can have a leading zero; month number must be §in the range 1–12; day number must be in the range 1–31. §Invalid dates such as 2/30/2004 are matched); year number §can have two or four digits and isn’t validated." regex="(10|11|12|0?[1–9])(?&lt;sep[-/])(30|31|2\d|1\d|0?[1–9])\k&lt;sep>(\d{4}|\d{2})" />
+      <item text="Eurepean date" toolTip="A European date in the dd-mm-yyyy or dd/mm/yyyy format. §Month and day numbers can have a leading zero; month number must be §in the range 1–12; day number must be in the range 1–31. §Invalid dates such as 2/30/2004 are matched); year number §can have two or four digits and isn’t validated." regex="(30|31|2\d|1\d|0?[1–9])(?&lt;sep>[-/])(10|11|12|0?[1–9])\k&lt;sep>(\d{4}|\d{2})" />
+      <item text="24-hour time" toolTip="A time value in the hh:mm 24-hour format; §leading zero for hour value is optional." regex="(2[0–3]|[01]\d|\d):[0–5]\d" />
+   </group>
+   <group text="Miscellaneous" toolTip="" includeBits="1">
+      <item text="Filename" toolTip="A Windows filename, with or without a drive and a directory name." regex="([A–Za–z]:)?\\?([^/:*?&lt;>&quot;|\\]+\\)*[^/:*?&lt;>&quot;|\\]+" />
+      <item text="Internet URL" toolTip="An Internet URL; it matches protocol names regardless of their case, such as HTTP or Https." regex="(?i:http|https)://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?" />
+      <item text="Email address" toolTip="An Internet e-mail address." regex="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+      <item text="IP address" toolTip="A 4-part IP address, such as 192.168.0.1; §the pattern verifies that each number is in the range 0-255." regex="((25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)" />
+      <item text="Password of at least NN chars" toolTip="A password of at least NN characters, §that contains at least one digit, one lowercase character, and one uppercase character. §Accepts [0-9A-Za-z@.] to allow email addresses as a password." regex="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@.]{§NN§,}$" />
+      <item text="-" />
+      <item text="Phone number" toolTip="A phone number such as (123)-456-7890." regex="\(\d{3}\)–\d{3}–\d{4}" />
+      <item text="U.S. zip code" toolTip="A 5- or 5+4 digit U.S. zip code." regex="^(?!00000)\d{5}(-\d{4})?" />
+      <item text="SSN" toolTip="A U.S. Social Security number (SSN)." regex="\d{3}-\d{2}-\d{4}" />
+      <item text="Credit card number" toolTip="A 16-digit credit card number that can embed optional dashes §or spaces to define four groups of four digits, for example, §1234567812345678, 1234-5678-1234-5678, or 1234 5678 1234 5678" regex="\b((\d{16}|\d{4}(-\d{4}){3})|(\d{4}( \d{4}){3}))\b" />
+      <item text="GUID" toolTip="A 32-digit GUID, with or without embedded dashes, §as in 00000304-0000-0000-C000-000000000046" regex="\b([0–9A–Fa–f]{32}|[0–9A–Fa–f]{8}-([0–9A–Fa–f]{4}-){3}[0–9A–Fa–f]{12})\b" />
+   </group>
+
+
+   </groups>

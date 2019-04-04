@@ -1,0 +1,1 @@
+An example of a text file embedded as a manifest resource.

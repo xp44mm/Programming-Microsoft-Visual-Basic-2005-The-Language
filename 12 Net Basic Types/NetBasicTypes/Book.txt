@@ -1,0 +1,279 @@
+Changes in 
+Programming Microsoft Visual Basic .NET 2003
+
+In general, the book has been updated for Visual Studio .NET 2003, version 1.1 of the .NET Framework, and the peculiar features of Windows Server 2003. 
+Five more chapters have been added on the following topics: PInvoke and COM Interop, Serviced components, Remoting, Security, and Internet programming.
+To make room for the new chapters, over 200 pages in the previous edition have been moved to separate documents on the companion CD. Some tables have been dropped (most notably, those that you can easily find in MSDN docs), and some sections on secondary topics have been shortened. Most listings have been revised for correctness, style, and conciseness.
+The CD now contains the complete e-book version of Programming Microsoft Visual Basic 2003 and Programming Microsoft Visual Basic 6, in addition to code samples for all chapters and the extra document files mentioned above.
+Chapter 1 - Introduction
+The section "Introduction to Visual Studio" has been moved to the companion CD.
+Chapter 2 – Modules and Variables
+The Sub Main Procedure (p. 29)
+The Sub Main procedure can take arguments and return the exit code.
+Data Types (p. 42)
+The new Upgrade Visual Basic 6 Code tool in Visual Studio .NET 2003.
+The >> and << Operators (p. 47)
+This new section explains the bit shifting operators in Visual Basic .NET 2003, with a discussion of how you can use them to test, clear, and set individual bits in integer values, plus routines for rotating bits (3 pages).
+Alternative Syntaxes for Arrays and Empty Arrays (p. 61)
+Two new sections that describe how you can create an array on the fly and pass it to a procedure, and how you can declare a non-Nothing array that contains zero elements.
+Chapter 3 – Control Flow and Error Handling
+For Next and For Each Loops (p. 72)
+This new section describes the syntax for loops that has been introduced in Visual Basic .NET 2003, plus optimization techniques and tips for looping on any set of values of the controlling variable.
+The When keyword (p. 86)
+Explanation of a debugging technique that lets you trace exceptions by just adding one statement to each Try block.
+Sections on Nested exception objects and Trace listeners and Switches have been moved to the companion CD.
+Chapter 4 – Class Fundamentals
+Trapping Events with AddHandler (p. 117)
+Included an explanation why you should always use RemoveHandler to avoid orphaned objects and consequent memory leakage.
+Trapping Events from Arrays and Collections (p. 120)
+An example of how you can trap events from the Controls collection of a form.
+Chapter 5 - Inheritance
+Override Variations (p. 134)
+A couple of performance tips on using nonoverridable vs. overridable methods in a class.
+The Protected Scope Qualifier (p. 150)
+A new, improved example of how you can use protected methods to improve code reuse in derived classes.
+Using Scope Qualifiers with Constructors (p. 152)
+The CachedFile class uses a private constructor and a public shared method to return the contents of a text file and cache it so that other clients can read it again without accessing the disk.
+Redefining Events (p. 156)
+This section explains the correct way to trap events from the base class and fixes a mistake I made in first edition.
+Object Lifetime (p. 157)
+This section was originally contained in Chapter 4.
+The Finalize Method (p. 159)
+A tip on using Environment.HasShutdownStarted method to understand whether it is safe to access system objects from the Finalize method.
+Combining the Dispose and Finalize Methods (p. 163)
+This section has been rewritten to provide better and clearer guidelines about if and when you should use the Dispose and the Finalize methods.
+Weak Object References (p. 168)
+An improved code sample shows how to use the WeakReference object to cache the contents of a large file and have it discarded when memory is low.
+Sections on Object Pooling, Generations, and Garbage collection and Threading have been moved to the companion CD.
+Chapter 6 – Interfaces, Delegates, and Attributes
+This chapter merges the contents of chapters 6 and 7 of first edition.
+The IComparable Interface (p. 179)
+A second version of the CompareTo method shows how you can improve performance by avoiding the creation of temporary strings.
+Chapter 7 - .NET Framework Basic Types
+Boxing and Unboxing (p. 204)
+Performance considerations about boxing, the hidden boxing operation that occurs when you call a virtual method of a value type, and when you must force a boxing operation by means of a CObj operator.
+String Optimizations (p. 211)
+Using the String.IsInterned method to detect whether a string is in the intern pool.
+The Encoding Class (p. 214)
+A new section that describes how you can use the Encoding class to convert from ANSI, Unicode, and raw Byte arrays.
+Formatting Date Values (p. 220)
+Table 7-4 contains two new format characters: f (second fractins) and t (the first character in the AM/PM designator).
+The Char Type (p. 221)
+Using the Convert class to mimic the Asc, AscW, Chr, and ChrW keywords.
+Sections on IFormattable, IFormatProvider, and IcustomFormatter interfaces have been moved to companion CD.
+Chapter 8 – Arrays, Lists, and Collections
+The Array Class (p. 240)
+Under .NET 1.1 arrays can have 64-bit indexes; consequently, the Array class has been extended with a LongLength property that returns a Long.
+Arrays of Arrays (p. 247)
+Jagged arrays are faster than regular two-dimensional arrays.
+The BitVector32 Class (p. 251)
+A new section showing how the BitVector32 class lets you stuff up to 32 boolean values into an Integer value and work with bit-coded fields in a very efficient manner.
+Custom Collection and Dictionary classes (p. 263)
+A better explanation of why you should define custom collections is provided. Additionally, the sections on CollectionBase and DictionaryBase have been extended.
+The NameObjectCollectionBase Abstract Class (p. 270)
+A new section that describes how you use the NameObjectCollectionBase class to mimic the behaviour of the VB6 Collection object.
+The IEnumerable and IEnumerator interfaces (p. 271)
+This section has been moved here from chapter 6 and expanded with additional examples. 
+Sections on nonzero-based arrays and on calling IEnumerator members have been moved to the companion CD.
+Chapter 9 – Files, Directories, and Streams
+The Directory and File classes (p. 279)
+The GetxxxxTimeUtc are new in .NET 1.1 and let you compare file timestamps in a way that is independent of the time zone, so they are good when you have files scattered over the Internet.
+Section on custom stream readers and writers has been moved to the companion CD.
+Chapter 10 – Object Serialization 
+Binary Serialization (p. 295)
+Using the formatter's AssemblyFormat property to control how the assembly name is stored in the serialized stream.
+The IDeserializationCallback Interface (p. 300)
+This section has been improved from previous edition of the book.
+A Custom Serialization Example (p. 302)
+This section has been improved from previous edition of the book, with more attention to what you must do to correctly implement the ISerializable interface in base and derived classes.
+The FormatterServices Helper Class (p. 305)
+This new section explains how you can use the FormatterServices class to streamline your serialization code.
+Chapter 11 – Regular Expressions 
+Regular Expression Options (p. 314)
+This section includes an example of a complete GREP-like command line utility.
+Shared Methods (p. 321)
+A tip for using the Unescape method to simulate C#'s ability to include escape characters inside a string constant.
+The CompileToAssembly Method (p. 322)
+A new section explains how you can use the underdocumented CompileToAssembly method to create DLLs that define pre-compiled Regex objects.
+Section on Capture and CaptureCollection objects has been moved to the companion CD.
+The section on building an expression evaluator with regular expressions have been moved to the companion CD.
+Chapter 12 – Threading
+Threads and Unhandled Exceptions (p. 335)
+A new section shows how you deal with unhandled exceptions in main and secondary threads.
+The SyncLock Statement (p. 340)
+A new code example shows in a graphical way what happens if you don't use a SyncLock block.
+The MethodImpl Attribute (p. 344)
+An extended explanation describes how this attribute works with instance and static methods.
+The Mutex Class (p. 348)
+A note shows how you can share named Mutex objects among processes.
+Section on asynchronous file operations has been moved to the companion CD.
+
+Chapter 13 – Components and Assembly
+Components  (p. 360)
+This new section shows a step-by-step approach to creating a .NET class library and an hostable components, working with multiple-projects solutions, and using the Configuration Manager. (8 pages)
+Using the DEVPATH Environment Variable (p. 373)
+A new section that explains how you can simplify the development and testing stage by means of the DEVPATH variable.
+Setting the Runtime Version (p. 381)
+A new section describes how you can use Visual Studio and configuration files to have a compiled assembly work under multiple versions of the .NET Framework. (3 pages)
+Sections on a real binding example, Delayed Signing and Key Containers, Command-line Tools, the AppDomain class, and the LoaderOptimization attribute have been moved to the companion CD.
+Chapter 14 – Reflection
+Dynamic Registration of Event Handlers (p. 406)
+This new section shows how you can dynamically register an handler for an event.
+Attributes and Reflection (p. 409)
+This section has been moved here from chapter 7 (in first edition) and has been expanded with a more complex example based on the CsvSerializer class and the CsvField custom attribute.
+On-the-fly Compilation (p. 414)
+This new section shows how you can compile a piece of Visual Basic code on the fly and illustrates how you can use this technique for advanced programming techniques, such as a math expression evaluator. (3 pages)
+Chapter 15 – Windows Forms Applications
+Returning a Value to Windows (p. 471)
+The section about window subclassing has been expanded with an example that uses the CopyMemory API function to overcome a few limitations of subclassing in "pure" .NET code.
+The Application.EnableVisualStyles Method (p. 475)
+This new section shows how you can use the Application.EnableVisualStyles method in .NET 1.1 to have your applications adopt the Windows XP look.
+Working with Embedded Resources (p. 479)
+This new section explains how you can add resource files to your project and access these resources from inside the application, without having to distribute additional data files.
+Form as Child Controls (p. 483)
+This new section describes the underdocumented TopLevel property and shows how you can make a form a child of another form and achieve the same effect of the VB6's Repeater control (that has been discontinued in VB.NET). (3 pages)
+Chapter 16 – Windows Forms Controls
+In first edition, this chapter covered the creation of custom controls, which have been moved to chapter 18.
+The LinkLabel Control (p. 489)
+A new tip about using the LinkLabel's Click event to launch Internet Explorer on a given URL.
+The ToolTip Control (p. 498)
+The ToolTip control can embed carriage returns in the tooltip.
+The FolderBrowserDialog Control (p. 504)
+The FolderBrowserDialog control (added in .NET 1.1) lets you display the standard Widnows dialog box through which the end user selects a directory.
+The PropertyGrid Control (p. 516)
+This new section covers the underdocumented PropertyGrid control and shows how you can use it to let your end users interactively modify the properties of your objects and controls.
+The DataGrid Control (p. 532)
+This new section covers the all-useful DataGrid control, how you can format its columns, and even how you can create your custom column styles that contain one or more controls of your choice. (5 pages)
+Chapter 17 – GDI+
+No significant changes in this chapter.
+Chapter 18 – Custom Windows Forms Controls
+Design-time Debugging (p. 595)
+A new section that explains how you can debug design-time events in custom controls.
+Adding Attributes (p. 598)
+This section has been extended with the description of the EditorBrowsable attribute.
+Working with Icons (p. 600)
+This new section shows several techniques for associating an icon to a custom control, using the poorly documented ToolboxBitmap attribute.
+The ControlPaint Class (p. 611)
+This new section illustrates how you can use the shared methods in the ControlPaint class to achieve several graphic effects.
+The ISupportInitialize Interface (p. 612)
+This new section explains how you can implement the IsupportInitialize interface in a control so that the control receives a notification when all the controls on the form have been created.
+Object Properties (p. 625)
+The example based on the AddressControl has been improved to fix a bug in the first edition of the book.
+Custom Control Designers (p. 629)
+This new section introduces custom control designers and shows a practical example of how you can interact with a custom control at design time. (2.5 pages)
+Data-Binding Support (p. 631)
+This new section shows how you can add support for data-binding to your custom controls, and includes a complete example of a data-bound ListView control. (3 pages)
+Design-time and Run-time Licensing (p. 634)
+The description of a different custom licensing schema has been added.
+Chapter 19 – Advanced Win32 Techniques
+In first edition this chapter included a discussion on Windows services and the ServiceController type, which are now covered in Chapter 20.
+The SystemEvents class (p. 646)
+A description of the SystemEvents class and how you can use it to trap important system-level events, for example when the user session ends or display settings change.
+Querying a Process for Information (p. )
+This section shows a technique to detect whether another instance of the same application is already running (like VB6 PrevInstance method).
+Installing a Custom Performance Counter (p. 673)
+This new section shows how you can use an installer class to create and register a new performance counter when your application is installed on the end user's machine.
+Installing an EventLog Component (p. 681)
+This new section shows how you can use an installer class to create and register a new event log when your application is installed on the end user's machine.
+Chapter 20 - Windows Services
+This chapter covers Windows services and the ServiceController class, which were previously in the "Advanced Win32 Techniques" chapter. Except for that, there are no significant changes or additions to these topics.
+Chapter 21 - ADO.NET in Connected Mode
+This chapter and the next one have been expanded to cover the new ODBC .NET Data provider and, to a lesser extent, the new Oracle .NET provider.
+Retrieving Schema Information (p. 718)
+This new section shows how you can use the OleDbConnection.GetOleDbSchemaTable to retrieve important schema information from a database.
+Using the ExecuteReader Method (p. 727)
+This section includes tips about the arguments you can pass to the ExecuteReader method.
+The DataReader Object (p. 736)
+A description of the new DataReader's HasRows property.
+Retrieving Column Information (p. 739)
+This new section describes the DataReader.GetSchemaTable method and how you can use it to extract information on database columns.
+Working with BLOB Columns (p. 741)
+This new section (4 pages) covers text and binary long fields (BLOBs) in depth, showing how you can read and write them in one operation as well as in separate chunks for added scalability.
+Chapter 22 - ADO.NET in Disconnected Mode
+A new section entitled "Writing Provider-Agnostic Code" is now available on the companion CD.
+Understanding the CommandBuilder Object (p. )
+This section explains some little-known details about the CommandBuilder and dissects the SQL statements that it produces (which are different from .NET 1.0).
+Rolling Back Multiple Updates (p. 795)
+This section explains a few important details to keep into account to correctly rollback a transacted update operation.
+Working with Identity Columns (p. 797)
+This new section explains how to retrieve the value of an identity column of added records and how to use the DataAdapter's UpdateRowSource property to automatically update DataTable's fields with this identity value.
+Reducing Conflicts with Custom Update Commands (p. 799)
+This new section shows several examples of custom Update and Delete commands that let you reduce update conflicts.
+Chapter 23 - XML and ADO.NET
+ADO.NET and Visual Studio .NET (p. 841)
+This section gathers information that was scattered elsewhere in first edition, and has been expanded with the description of all the options you have when configuring a DataAdapter with Visual Studio .NET and a description of ADO.NET design-time components, such as the DataView.
+Chapter 24 - Web Forms and Controls
+This and all other ASP.NET-related chapters have been expanded to account for Windows Server 2003 and the new version of IIS. These new versions pose several challanges, especially when security is concerned.
+Setting the Main Directory for ASP.NET Projects (p. 858)
+This new section illustrates a best practice for creating VS.NET projects without scattering individual files on your disk, a typical FAQ among .NET developers.
+The Page Directive (p. 870)
+This section includes a description of the new ValidateRequest attribute, added in ASP.NET 1.1.
+The HyperLink, Image, Button, LinkButton, and ImageButton Controls(p. )
+At the end of this section a tip shows how you can produce client-side Javascript code to display a message box and ask for confirmation before performing a potentially dangerous operation.
+Formatting and Outlining in Visual Studio .NET (p. 906)
+This new section (4 pages) covers the features in VS.NET that let you easily format HTML text, align controls, insert <DIV>, <SPAN> and other common page elements, manage HTML tables and frames. It also illustrates how to use the Document Outline window.
+Chapter 25 - Web Forms Data Binding
+This chapter contain information that was previously available in previous chapter, as well as new topics.
+Data Binding with List Controls (p. )
+At the end of this section a tips shows how you can bind multiple controls with a multiple-SELECT command that does a single round-trip to the server.
+Nested DataGrids (p. 952)
+This new section (3 pages) show how you can nest one DataGrid inside another to render master-detail relations.
+Chapter 26 - ASP.NET Applications 
+Out-of-Process Sessions Based on SQL Server (p. 979)
+This section has been extended to cover the InstallPersisteSqlState.sql script to create SQL Server-based sessions that survive an application restart.
+Passing Data Between Pages (p.991 )
+This new section covers a technique based on the Context property for passing data between ASP.NET pages without storing them in Session or ViewState variables.
+Chapter 27 - ASP.NET Security and Configuration
+This new chapter includes material that was previous included in previous chapter.
+Configuration Settings for Forms Authentication (p. )
+This section includes a description of the new IsolatedApps modifier in the <machine> configuration setting, added in ASP.NET 1.1.
+<processModel> (p. 1039)
+This section covers the differences that this configuration tag exhibits when running under IIS 6.0.
+<securityPolicy> (p. 1043)
+The trust levels available for this configuration tag have changed in ASP.NET 1.1.
+Managing Multiple ASP.NET Versions (p. 1044)
+This new section explains how you can install and mantain multiple ASP.NET versions on the same computer and bind individual applications to a specific version.
+Chapter 28 - User Controls and Custom Controls 
+All the code samples have been polished and adapter to ASP.NET 1.1, but no significant changes have been made.
+Chapter 29 - Web Services
+Creating a Web Service Client (p. 1091)
+The way to connect to a local Web service has changed under Visual Studio .NET 2003.
+Understanding Web Services Protocols (p. 1094)
+ASP.NET 1.1 disables by default the GET protocol and makes the POST protocol available only for local calls. 
+Working with Proxy Servers (p. 1108)
+This new short section explain how you can invoke a Web Service from behind a proxy.
+SOAP Headers (p. 1111)
+This section covers the differences in how ASP.NET 1.1 processes SOAP headers and their Required and Direction arguments.
+Chapter 30 - Pinvoke and COM Interop
+This new chapter (50 pages) covers all you need to know to invoke functions in "classic" DLLs (such as the Windows API) and in COM components, plus how to expose your .NET components to COM clients (such as VB6 apps). 
+
+The Pinvoke section explains the DllImport, MarshalAs, StructLayout, FieldOffset, In and Out attributes, callbacks, advanced marshalling with the Marshal class. 
+
+The COM Interop section shows how to import COM components into .NET, both from VS.NET or with the tlbimp tool, create Primary Interop Assemblies (PIAs), use late binding and reflection with COM objects, work with COM apartments and solve thread issues and marshaling problems related to Variants values.
+
+The "Calling .NET Objects from COM" section shows how to use the RegAsm and TlbExp utilities to expose a .NET component to COM client, how to use attributes to control the conversion, how to work with exceptions, and contains a checklist for creating COM-friendly .NET components.
+Chapter 31 - Serviced Components
+This new chapter (50 pages) covers how to use VB.NET to write COM+ components and MSMQ-aware applications. All the examples use a sample (and simple) database and proceed towards increasingly complex code that uses transactions, control the isolation level and timeout, leverage object pooling, enforce role-based security. 
+
+A section is devoted to registering and deploying the COM+ application and using the Regsvcs utility, setting the application identity, and exporting the COM+ application to other machines. Advanced topics include using the security call context, the BYOT (Bring Your Own Transaction) class, the Connection.EnlistDistributedTransaction method,.
+
+Another section covers COM+ 1.5 specific features (including those that are only available under Windows Server 2003), such as Application pooling and recycling, applications running as NT services, private and aliases components, applications partitions, components exposed as Web services, and the new "Services without Components" feature.
+
+The last section in this chapter describes asynchronous method invocation techniques you can use with COM+, such as queued components and MSMQ messages.
+
+Chapter 32 - Remoting
+This new chapter (44 pages) cover .NET remoting and explains the pros and cons of this technology compared to Web Services and Serviced components. It explains the different types of remoting components you can create (server-activated vs. client-activated, single-call and singleton SAOs) and the implications of passing objects by value or by reference. An example shows how to create a host application and a client application, how to register objects and channels (both via code or configuration files). 
+
+A separate section illustrates the many techniques you can adopt to manage object lifetime, incluing leases and sponsors, and using a tracking handler. You also learn about metadata deployment, the SoapSuds tool, wrapped proxies, and techniques based on shared interfaces, base types, and factory classes.
+
+The last section covers the hosting options you have, and is mostly devoted to using IIS as a host for remoting components and configuring it for improved security.
+Chapter 33 - Security
+This new chapter (57 pages) covers all the many facets of the .NET framework that are related to security, including Code Access Security (CAS), role-based security, and cryptography. It begins with a description of policy levels, evidences, permissions, permission sets, code groups, stack walks, and partially trusted assemblies. Then it continues with many examples that show how to work with CAS using imperative and declarative coding styles, including demand, permit, deny, assert, permission sets and named permission sets, link demand, inheritance demand, request minimum/optional/refuse actions, identity permissions, and more.
+
+The section on role-based security describes the Identity and Principal types, how you can impersonate a different Windows user. The last section covers all the main types in the System.Security.Cryptography namespace, including the CryptoStream, symmetrical and asymmetrical encryption techniques, hash algorthms, and random value generation.
+Chapter 34 - Programming for the Internet
+This new chapter (30 pages) includes a series of programming techniques for creating Internet-aware applications. The first section is devoted to Windows Forms applications over HTTP and No-Touch deployment, with a focused description of security-related techniques you can adopt and the solution to common versioning problems. It also covers isolated storage.
+
+The next section covers several classes for reading and posting requests to Web pages and working with the TCP protocol: the WebClient class, the WebRequest and WebResponse classes, and the TcpClient class. The chapter ends with an example of using the SmtpMail class for sending emails from any Windows or ASP.NET application, plus many tips on how you can host the WebBrowser control inside a Windows form, explore the structure of the DHTML document and handle its events.
+
+

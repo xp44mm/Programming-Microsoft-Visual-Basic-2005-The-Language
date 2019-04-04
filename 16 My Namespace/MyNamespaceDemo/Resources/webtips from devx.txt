@@ -1,0 +1,79 @@
+
+http://archive.devx.com/free/tips/tipview.asp?content_id=1605
+
+
+'Wait Please...' Implementation
+http://archive.devx.com/free/tips/tipview.asp?content_id=2773
+
+Add a Drop Shadow in IE4 or IE5
+http://archive.devx.com/free/tips/tipview.asp?content_id=1706
+
+Adding Soft Word Wrap to the HTML TextArea Element
+http://archive.devx.com/free/tips/tipview.asp?content_id=1382
+
+Alter Your Browser's Scrollbar Colour
+http://archive.devx.com/free/tips/tipview.asp?content_id=3742
+
+Confirm Dialog From a HREF
+http://archive.devx.com/free/tips/tipview.asp?content_id=2702
+
+Forcing a Page to be Loaded from the Server
+http://archive.devx.com/free/tips/tipview.asp?content_id=943
+
+Highlight Content in Response to User Mouseover Using DHTML/CSS
+http://archive.devx.com/free/tips/tipview.asp?content_id=1124
+
+How to Handle Multiple SUBMIT Buttons in HTML Forms
+http://archive.devx.com/free/tips/tipview.asp?content_id=2260
+
+How to Void a Cookie and Delete it from the Browser
+http://archive.devx.com/free/tips/tipview.asp?content_id=3781
+
+Improving Usability with the LABEL Tag
+http://archive.devx.com/free/tips/tipview.asp?content_id=2918
+
+Keep Anchor Tags from Changing Color
+http://archive.devx.com/free/tips/tipview.asp?content_id=796
+
+Launch the Organize Favorites Dialog in IE5
+http://archive.devx.com/free/tips/tipview.asp?content_id=2442
+
+Make Background Image Act as a Watermark in IE
+http://archive.devx.com/free/tips/tipview.asp?content_id=1817
+
+Mouseover Effects for Links
+http://archive.devx.com/free/tips/tipview.asp?content_id=2707
+
+Notify Session Time Out When Using ASP
+http://archive.devx.com/free/tips/tipview.asp?content_id=798
+
+Playing a Sound Automatically Using META Tags
+http://archive.devx.com/free/tips/tipview.asp?content_id=1094
+
+Prevent IE5 AutoComplete on Your Forms
+http://archive.devx.com/free/tips/tipview.asp?content_id=1731
+
+Print Pages in IE5 by Calling the window.print() Method
+http://archive.devx.com/free/tips/tipview.asp?content_id=1819
+
+Run a DOS Command From an HTML Page
+http://archive.devx.com/free/tips/tipview.asp?content_id=3675
+
+Scrolling DIVs
+http://archive.devx.com/free/tips/tipview.asp?content_id=2890
+
+Set Home Page with DHTML
+http://archive.devx.com/free/tips/tipview.asp?content_id=2695
+
+Speed Up MouseOver/Out Image Changes Using Pre-loaded Images
+http://archive.devx.com/free/tips/tipview.asp?content_id=2834
+
+Submitting a Form with the Enter Key
+http://archive.devx.com/free/tips/tipview.asp?content_id=2900
+
+Using the SetTimeout() Function
+http://archive.devx.com/free/tips/tipview.asp?content_id=2368
+
+VBScript for "ShowOpenDialog"
+http://archive.devx.com/free/tips/tipview.asp?content_id=4223
+
