@@ -256,7 +256,7 @@ Module MainModule
       Dim asm As Assembly = Assembly.Load("mscorlib")
       ' (Note that Module is a reserved word in Visual Basic.)
       For Each mo As [Module] In asm.GetModules()
-         Console.WriteLine("{0} – {1}", mo.Name, mo.ScopeName)
+         Console.WriteLine("{0} â€“ {1}", mo.Name, mo.ScopeName)
       Next
       Debug.Assert(asm.GetModules().Length = 1 AndAlso asm.GetModules()(0).Name = "mscorlib.dll" AndAlso asm.GetModules()(0).ScopeName = "CommonLanguageRuntimeLibrary")
 
@@ -1147,7 +1147,7 @@ Module MainModule
    End Sub
 
    Sub PerformanceConsiderations()
-      ' This code doesn't work – The GetMethod method returns Nothing.
+      ' This code doesn't work â€“ The GetMethod method returns Nothing.
       ' You must either use Integer instead of Short in the argTypes signature
       ' or drop the BindingFlags.ExactBinding bit in the GetMethod call.
       Dim argTypes() As Type = {GetType(Char), GetType(Short)}
