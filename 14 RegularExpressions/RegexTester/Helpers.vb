@@ -5,8 +5,8 @@ Module Helpers
       For Each ctrl As Control In GetChildControls(frm)
          ' Retrieve the tooltip
          Dim text As String = tooltip.GetToolTip(ctrl)
-         ' Convert ง to newlines
-         text = text.Replace("ง", ControlChars.CrLf)
+         ' Convert ยง to newlines
+         text = text.Replace("ยง", ControlChars.CrLf)
          ' Assign both the tooltip and the help message
          tooltip.SetToolTip(ctrl, text)
          helpProv.SetHelpString(ctrl, text)

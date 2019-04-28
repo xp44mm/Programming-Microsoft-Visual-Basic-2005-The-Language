@@ -107,7 +107,7 @@ Partial Class GenerateCodeForm
       Me.chkDescriptionAsComment.Size = New System.Drawing.Size(139, 17)
       Me.chkDescriptionAsComment.TabIndex = 3
       Me.chkDescriptionAsComment.Text = "&Description as comment"
-      Me.ToolTip1.SetToolTip(Me.chkDescriptionAsComment, "The generated code contains a comment equal to the regex description. §(This opti" & _
+      Me.ToolTip1.SetToolTip(Me.chkDescriptionAsComment, "The generated code contains a comment equal to the regex description. Â§(This opti" & _
               "on is disabled if the current regular expression has no description.)")
       Me.chkDescriptionAsComment.UseVisualStyleBackColor = True
       '
@@ -119,7 +119,7 @@ Partial Class GenerateCodeForm
       Me.chkGenerateLoops.Size = New System.Drawing.Size(93, 17)
       Me.chkGenerateLoops.TabIndex = 2
       Me.chkGenerateLoops.Text = "&Generate loop"
-      Me.ToolTip1.SetToolTip(Me.chkGenerateLoops, "The generate code contains a loop that visits all matches or split lines. §(This " & _
+      Me.ToolTip1.SetToolTip(Me.chkGenerateLoops, "The generate code contains a loop that visits all matches or split lines. Â§(This " & _
               "option is disabled if the current command is Replace.)")
       Me.chkGenerateLoops.UseVisualStyleBackColor = True
       '
@@ -131,7 +131,7 @@ Partial Class GenerateCodeForm
       Me.chkAssumeImports.Size = New System.Drawing.Size(130, 17)
       Me.chkAssumeImports.TabIndex = 1
       Me.chkAssumeImports.Text = "&Assume Imports/using"
-      Me.ToolTip1.SetToolTip(Me.chkAssumeImports, "Assume that the System.Text.RegularExpressions namespace §has been imported in cu" & _
+      Me.ToolTip1.SetToolTip(Me.chkAssumeImports, "Assume that the System.Text.RegularExpressions namespace Â§has been imported in cu" & _
               "rrent source file.")
       Me.chkAssumeImports.UseVisualStyleBackColor = True
       '
@@ -144,7 +144,7 @@ Partial Class GenerateCodeForm
       Me.chkInstanceMethods.TabIndex = 0
       Me.chkInstanceMethods.Text = "&Instance method"
       Me.ToolTip1.SetToolTip(Me.chkInstanceMethods, "If selected the generated code uses the Find, Replace, or Split instance method. " & _
-              "§Otherwise generate code that uses the static version of these methods.")
+              "Â§Otherwise generate code that uses the static version of these methods.")
       Me.chkInstanceMethods.UseVisualStyleBackColor = True
       '
       'txtCode
@@ -186,7 +186,7 @@ Partial Class GenerateCodeForm
       Me.chkCopyToClipboard.Size = New System.Drawing.Size(169, 17)
       Me.chkCopyToClipboard.TabIndex = 3
       Me.chkCopyToClipboard.Text = "C&opy code to clipboard on exit"
-      Me.ToolTip1.SetToolTip(Me.chkCopyToClipboard, "If enabled, generated code is copied to the Clipboard §when the user clicks on th" & _
+      Me.ToolTip1.SetToolTip(Me.chkCopyToClipboard, "If enabled, generated code is copied to the Clipboard Â§when the user clicks on th" & _
               "e OK button.")
       Me.chkCopyToClipboard.UseVisualStyleBackColor = True
       '

@@ -1,27 +1,28 @@
 Public Class Invoice
-   ' This variable holds the number of instances created so far.
-   Private Shared InstanceCount As Integer
 
-   Public Sub New()
-      ' Increment number of created instances.
-      InstanceCount += 1
-      ' Use the current count as the ID for this instance.
-      m_Id = InstanceCount
-   End Sub
+    ' This variable holds the number of instances created so far.
+    Private Shared InstanceCount As Integer
 
-   ' A unique ID for this instance
-   Private ReadOnly m_Id As Long
+    Public Sub New()
+        ' Increment number of created instances.
+        InstanceCount += 1
+        ' Use the current count as the ID for this instance.
+        m_Id = InstanceCount
+    End Sub
 
-   Public ReadOnly Property ID() As Long
-      Get
-         Return m_ID
-      End Get
-   End Property
+    ' A unique ID for this instance
+    Private ReadOnly m_Id As Long
 
-   Public Shared ReadOnly Property NextInvoiceID() As Long
-      Get
-         Return InstanceCount + 1
-      End Get
-   End Property
+    Public ReadOnly Property ID() As Long
+        Get
+            Return m_Id
+        End Get
+    End Property
+
+    Public Shared ReadOnly Property NextInvoiceID() As Long
+        Get
+            Return InstanceCount + 1
+        End Get
+    End Property
 
 End Class

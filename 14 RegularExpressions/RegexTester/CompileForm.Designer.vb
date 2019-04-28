@@ -60,7 +60,7 @@ Partial Class CompileForm
       Me.btnRemove.Size = New System.Drawing.Size(58, 23)
       Me.btnRemove.TabIndex = 6
       Me.btnRemove.Text = "&Remove"
-      Me.ToolTip1.SetToolTip(Me.btnRemove, "Remove the selected regular expression from the list. §(Click on the row header t" & _
+      Me.ToolTip1.SetToolTip(Me.btnRemove, "Remove the selected regular expression from the list. Â§(Click on the row header t" & _
               "o the left to select an item.)")
       Me.btnRemove.UseVisualStyleBackColor = True
       '
@@ -199,7 +199,7 @@ Partial Class CompileForm
       Me.btnCurrent.Size = New System.Drawing.Size(58, 23)
       Me.btnCurrent.TabIndex = 4
       Me.btnCurrent.Text = "C&urrent"
-      Me.ToolTip1.SetToolTip(Me.btnCurrent, "Add the current regular expression (the one being §tested in the main window) to " & _
+      Me.ToolTip1.SetToolTip(Me.btnCurrent, "Add the current regular expression (the one being Â§tested in the main window) to " & _
               "the list.")
       Me.btnCurrent.UseVisualStyleBackColor = True
       '
@@ -228,7 +228,7 @@ Partial Class CompileForm
       Me.txtAssemblyName.Name = "txtAssemblyName"
       Me.txtAssemblyName.Size = New System.Drawing.Size(261, 20)
       Me.txtAssemblyName.TabIndex = 1
-      Me.ToolTip1.SetToolTip(Me.txtAssemblyName, "The name of the compiled assembly. §(It is also used to name the generated DLL fi" & _
+      Me.ToolTip1.SetToolTip(Me.txtAssemblyName, "The name of the compiled assembly. Â§(It is also used to name the generated DLL fi" & _
               "le.)")
       '
       'Label3

@@ -460,7 +460,7 @@ Partial Public Class MainForm
       Me.rtbSource.Size = New System.Drawing.Size(674, 101)
       Me.rtbSource.TabIndex = 6
       Me.rtbSource.Text = ""
-      Me.ToolTip1.SetToolTip(Me.rtbSource, "The text on which the regular expression is applied. §Use the File-Load menu to l" & _
+      Me.ToolTip1.SetToolTip(Me.rtbSource, "The text on which the regular expression is applied. îœ›se the File-Load menu to l" & _
               "oad a text file.")
       '
       'Label2
@@ -526,7 +526,7 @@ Partial Public Class MainForm
       Me.tvwResults.ShowRootLines = False
       Me.tvwResults.Size = New System.Drawing.Size(674, 164)
       Me.tvwResults.TabIndex = 8
-      Me.ToolTip1.SetToolTip(Me.tvwResults, "All the matches found. §Double-click on an item to see groups and captures.")
+      Me.ToolTip1.SetToolTip(Me.tvwResults, "All the matches found. îœŠouble-click on an item to see groups and captures.")
       '
       'rtbResults
       '
@@ -555,7 +555,7 @@ Partial Public Class MainForm
       Me.rtbRegex.Size = New System.Drawing.Size(674, 84)
       Me.rtbRegex.TabIndex = 2
       Me.rtbRegex.Text = ""
-      Me.ToolTip1.SetToolTip(Me.rtbRegex, "The regular expression pattern. §Right-click to display list of common patterns.")
+      Me.ToolTip1.SetToolTip(Me.rtbRegex, "The regular expression pattern. îœ˜ight-click to display list of common patterns.")
       '
       'rtbReplace
       '
@@ -568,7 +568,7 @@ Partial Public Class MainForm
       Me.rtbReplace.Size = New System.Drawing.Size(674, 48)
       Me.rtbReplace.TabIndex = 4
       Me.rtbReplace.Text = ""
-      Me.ToolTip1.SetToolTip(Me.rtbReplace, "The replace pattern. §Right-click to display list of common patterns.")
+      Me.ToolTip1.SetToolTip(Me.rtbReplace, "The replace pattern. îœ˜ight-click to display list of common patterns.")
       '
       'lblMatches
       '

@@ -331,28 +331,28 @@ Public Class MainForm
          If (includeBits And bitMask) = 0 Then Continue For
 
          ' Create the group menu
-         Dim groupText As String = groupNode.GetAttribute("text").Replace("ง", "&")
+         Dim groupText As String = groupNode.GetAttribute("text").Replace("ยง", "&")
          ' Add a separator if text is "-"
          If groupText = "-" Then
             rootMenu.Items.Add(New ToolStripSeparator)
             Continue For
          End If
 
-         Dim groupToolTip As String = groupNode.GetAttribute("toolTip").Replace("ง", ControlChars.CrLf)
+         Dim groupToolTip As String = groupNode.GetAttribute("toolTip").Replace("ยง", ControlChars.CrLf)
          Dim groupMenuItem As New ToolStripMenuItem(groupText)
          groupMenuItem.ToolTipText = groupToolTip
          rootMenu.Items.Add(groupMenuItem)
 
          ' Parse items
          For Each itemNode As XmlElement In groupNode.SelectNodes("item")
-            Dim itemText As String = itemNode.GetAttribute("text").Replace("ง", "&")
+            Dim itemText As String = itemNode.GetAttribute("text").Replace("ยง", "&")
             ' Add a separator if text is "-"
             If itemText = "-" Then
                groupMenuItem.DropDownItems.Add(New ToolStripSeparator)
                Continue For
             End If
 
-            Dim itemToolTip As String = itemNode.GetAttribute("toolTip").Replace("ง", ControlChars.CrLf)
+            Dim itemToolTip As String = itemNode.GetAttribute("toolTip").Replace("ยง", ControlChars.CrLf)
             Dim regex As String = itemNode.GetAttribute("regex")
             Dim itemMenuItem As New ToolStripMenuItem(itemText)
             itemMenuItem.ToolTipText = itemToolTip
@@ -611,11 +611,11 @@ Public Class MainForm
       Dim selStart As Integer = rtbRegex.SelectionStart
 
       ' Insert the regex, but drop the placeholder chars.
-      ctrl.SelectedText = regex.Replace("ง", "")
-      ' Select the portion embedded in ง chars
-      Dim i As Integer = regex.IndexOf("ง")
+      ctrl.SelectedText = regex.Replace("ยง", "")
+      ' Select the portion embedded in ยง chars
+      Dim i As Integer = regex.IndexOf("ยง")
       If i >= 0 Then
-         Dim j As Integer = regex.IndexOf("ง", i + 1)
+         Dim j As Integer = regex.IndexOf("ยง", i + 1)
          ctrl.Select(selStart + i, j - i - 1)
       End If
    End Sub

@@ -1046,23 +1046,23 @@ Module MainModule
    End Sub
 
    Sub DynamicRegistrationOfEventHandlers()
-      Dim type As Type = Assembly.GetExecutingAssembly().GetType("MyApp.Person")
-      Dim arguments() As Object = {"Joe", "Doe"}
-      Dim obj As Object = type.InvokeMember("", BindingFlags.CreateInstance, Nothing, Nothing, arguments)
+        Dim tp As Type = Assembly.GetExecutingAssembly().GetType("MyApp.Person")
+        Dim arguments() As Object = {"Joe", "Doe"}
+        Dim obj As Object = tp.InvokeMember("", BindingFlags.CreateInstance, Nothing, Nothing, arguments)
 
-      ' Get a reference to the GotEmail event.
-      Dim ei As EventInfo = type.GetEvent("GotEmail")
-      ' Get a reference to the delegate that defines the event.
-      Dim handlerType As Type = ei.EventHandlerType
-      ' Create a delegate of this type that points to a method in this module
-      Dim handler As [Delegate] = [Delegate].CreateDelegate( _
+        ' Get a reference to the GotEmail event.
+        Dim ei As EventInfo = tp.GetEvent("GotEmail")
+        ' Get a reference to the delegate that defines the event.
+        Dim handlerType As Type = ei.EventHandlerType
+        ' Create a delegate of this type that points to a method in this module
+        Dim handler As [Delegate] = [Delegate].CreateDelegate(
           handlerType, GetType(MainModule), "GotEmail_Handler")
-      ' Register this handler dynamically.
-      ei.AddEventHandler(obj, handler)
-      ' Call the method that fires the event. (Use late-binding.)
-      Dim args() As Object = {"Hello Joe", 2}
-      type.InvokeMember("SendEmail", BindingFlags.InvokeMethod, Nothing, obj, args)
-   End Sub
+        ' Register this handler dynamically.
+        ei.AddEventHandler(obj, handler)
+        ' Call the method that fires the event. (Use late-binding.)
+        Dim args() As Object = {"Hello Joe", 2}
+        tp.InvokeMember("SendEmail", BindingFlags.InvokeMethod, Nothing, obj, args)
+    End Sub
 
    Private Sub GotEmail_Handler(ByVal sender As Object, ByVal e As GotEmailEventArgs)
       Console.WriteLine("GotEmail event fired")

@@ -86,7 +86,7 @@ Partial Class PropertiesForm
       Me.chkEcmaScript.Size = New System.Drawing.Size(83, 17)
       Me.chkEcmaScript.TabIndex = 12
       Me.chkEcmaScript.Text = "ECM&AScript"
-      Me.ToolTip1.SetToolTip(Me.chkEcmaScript, "Enables ECMAScript-compliant behavior. ßThis flag can be used only in conjunction" & _
+      Me.ToolTip1.SetToolTip(Me.chkEcmaScript, "Enables ECMAScript-compliant behavior. Óúöhis flag can be used only in conjunction" & _
               " with the IgnoreCase, Multiline, and Compiled flags. ")
       Me.chkEcmaScript.UseVisualStyleBackColor = True
       '
@@ -98,7 +98,7 @@ Partial Class PropertiesForm
       Me.chkCultureInvariant.Size = New System.Drawing.Size(102, 17)
       Me.chkCultureInvariant.TabIndex = 11
       Me.chkCultureInvariant.Text = "C&ulture invariant"
-      Me.ToolTip1.SetToolTip(Me.chkCultureInvariant, "Uses the culture implied by CultureInfo.InvariantCulture, instead of ßthe locale " & _
+      Me.ToolTip1.SetToolTip(Me.chkCultureInvariant, "Uses the culture implied by CultureInfo.InvariantCulture, instead of Óú∫he locale " & _
               "assigned to the current thread.")
       Me.chkCultureInvariant.UseVisualStyleBackColor = True
       '
@@ -110,8 +110,8 @@ Partial Class PropertiesForm
       Me.chkRightToLeft.Size = New System.Drawing.Size(80, 17)
       Me.chkRightToLeft.TabIndex = 10
       Me.chkRightToLeft.Text = "&Right to left"
-      Me.ToolTip1.SetToolTip(Me.chkRightToLeft, "Specifies that the search is from right to left ßinstead of from left to right. I" & _
-              "f a starting index is specified, ßit should point to the end of the string. ")
+      Me.ToolTip1.SetToolTip(Me.chkRightToLeft, "Specifies that the search is from right to left ÓúØnstead of from left to right. I" & _
+              "f a starting index is specified, ÓúØt should point to the end of the string. ")
       Me.chkRightToLeft.UseVisualStyleBackColor = True
       '
       'chkExplicitCapture
@@ -122,8 +122,8 @@ Partial Class PropertiesForm
       Me.chkExplicitCapture.Size = New System.Drawing.Size(98, 17)
       Me.chkExplicitCapture.TabIndex = 9
       Me.chkExplicitCapture.Text = "&Explicit capture"
-      Me.ToolTip1.SetToolTip(Me.chkExplicitCapture, "Captures only explicitly named or numbered groups ßof the form (?<name>) so that " & _
-              "naked parentheses act as noncapturing ßgroups without your having to use the (?:" & _
+      Me.ToolTip1.SetToolTip(Me.chkExplicitCapture, "Captures only explicitly named or numbered groups Óúµf the form (?<name>) so that " & _
+              "naked parentheses act as noncapturing Óú≠roups without your having to use the (?:" & _
               ") construct.")
       Me.chkExplicitCapture.UseVisualStyleBackColor = True
       '
@@ -135,7 +135,7 @@ Partial Class PropertiesForm
       Me.chkCompiled.Size = New System.Drawing.Size(69, 17)
       Me.chkCompiled.TabIndex = 8
       Me.chkCompiled.Text = "&Compiled"
-      Me.ToolTip1.SetToolTip(Me.chkCompiled, "Compiles the regular expression and generates MSIL code; ßthis option generates f" & _
+      Me.ToolTip1.SetToolTip(Me.chkCompiled, "Compiles the regular expression and generates MSIL code; Óú∫his option generates f" & _
               "aster code at the expense of longer start-up time.")
       Me.chkCompiled.UseVisualStyleBackColor = True
       '
@@ -147,8 +147,8 @@ Partial Class PropertiesForm
       Me.chkMultiline.Size = New System.Drawing.Size(64, 17)
       Me.chkMultiline.TabIndex = 7
       Me.chkMultiline.Text = "&Multiline"
-      Me.ToolTip1.SetToolTip(Me.chkMultiline, "Multiline mode; changes the behavior of ß^ and $ so that they match the beginning" & _
-              " and end of individual lines, respectively, ßinstead of the whole string.")
+      Me.ToolTip1.SetToolTip(Me.chkMultiline, "Multiline mode; changes the behavior of Óú§ and $ so that they match the beginning" & _
+              " and end of individual lines, respectively, ÓúØnstead of the whole string.")
       Me.chkMultiline.UseVisualStyleBackColor = True
       '
       'chkIgnoreWhitespace
@@ -159,8 +159,8 @@ Partial Class PropertiesForm
       Me.chkIgnoreWhitespace.Size = New System.Drawing.Size(116, 17)
       Me.chkIgnoreWhitespace.TabIndex = 6
       Me.chkIgnoreWhitespace.Text = "Ignore &Whitespace"
-      Me.ToolTip1.SetToolTip(Me.chkIgnoreWhitespace, "Ignores unescaped white space from the pattern and ßenables comments marked with " & _
-              "#. Significant spaces ßin the pattern must be specified as [ ] or \x20.")
+      Me.ToolTip1.SetToolTip(Me.chkIgnoreWhitespace, "Ignores unescaped white space from the pattern and Óú´nables comments marked with " & _
+              "#. Significant spaces ÓúØn the pattern must be specified as [ ] or \x20.")
       Me.chkIgnoreWhitespace.UseVisualStyleBackColor = True
       '
       'chkIgnoreCase
@@ -192,7 +192,7 @@ Partial Class PropertiesForm
       Me.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
       Me.txtDescription.Size = New System.Drawing.Size(529, 52)
       Me.txtDescription.TabIndex = 3
-      Me.ToolTip1.SetToolTip(Me.txtDescription, "The free-format description of the regular expression.ßCan be used to generate co" & _
+      Me.ToolTip1.SetToolTip(Me.txtDescription, "The free-format description of the regular expression.Óúâan be used to generate co" & _
               "mments in code.")
       '
       'Label2
@@ -210,7 +210,7 @@ Partial Class PropertiesForm
       Me.txtName.Name = "txtName"
       Me.txtName.Size = New System.Drawing.Size(530, 20)
       Me.txtName.TabIndex = 1
-      Me.ToolTip1.SetToolTip(Me.txtName, "The name of the regular expression. ßIt is used when the expression is compiled.")
+      Me.ToolTip1.SetToolTip(Me.txtName, "The name of the regular expression. Óúèt is used when the expression is compiled.")
       '
       'Label1
       '
@@ -247,7 +247,7 @@ Partial Class PropertiesForm
       Me.chkIncludeEmptyGroups.Size = New System.Drawing.Size(127, 17)
       Me.chkIncludeEmptyGroups.TabIndex = 8
       Me.chkIncludeEmptyGroups.Text = "Include empty g&roups"
-      Me.ToolTip1.SetToolTip(Me.chkIncludeEmptyGroups, "If selected, groups are included in results ßeven if they match an empty string.")
+      Me.ToolTip1.SetToolTip(Me.chkIncludeEmptyGroups, "If selected, groups are included in results Óú´ven if they match an empty string.")
       Me.chkIncludeEmptyGroups.UseVisualStyleBackColor = True
       '
       'numMatches
@@ -320,8 +320,8 @@ Partial Class PropertiesForm
       Me.cboFormat.Name = "cboFormat"
       Me.cboFormat.Size = New System.Drawing.Size(186, 21)
       Me.cboFormat.TabIndex = 3
-      Me.ToolTip1.SetToolTip(Me.cboFormat, "Sets the format used to display results. ßResults are displayed either in a treev" & _
-              "iew or a textbox. ßBy default, the Find command uses the treeview, all other com" & _
+      Me.ToolTip1.SetToolTip(Me.cboFormat, "Sets the format used to display results. Óúòesults are displayed either in a treev" & _
+              "iew or a textbox. Óúày default, the Find command uses the treeview, all other com" & _
               "mands use the textbox.")
       '
       'Label4

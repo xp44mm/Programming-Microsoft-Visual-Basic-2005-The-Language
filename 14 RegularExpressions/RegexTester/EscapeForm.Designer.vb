@@ -105,7 +105,7 @@ Partial Class EscapeForm
       Me.chkCopyToClipboard.Size = New System.Drawing.Size(137, 17)
       Me.chkCopyToClipboard.TabIndex = 4
       Me.chkCopyToClipboard.Text = "C&opy result to Clipboard"
-      Me.ToolTip1.SetToolTip(Me.chkCopyToClipboard, "If selected, the result is copied to the Clipboard §when the user clicks on the O" & _
+      Me.ToolTip1.SetToolTip(Me.chkCopyToClipboard, "If selected, the result is copied to the Clipboard îœ½hen the user clicks on the O" & _
               "K button.")
       Me.chkCopyToClipboard.UseVisualStyleBackColor = True
       '
