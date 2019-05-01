@@ -13,7 +13,7 @@ Public Class Person
       Me.LastName = lastName
    End Sub
    ' ...(other properties and methods as in Person class) ...
-   ' … 
+   ' â€¦ 
 
    Protected Overrides Sub Finalize()
       If Environment.HasShutdownStarted Then

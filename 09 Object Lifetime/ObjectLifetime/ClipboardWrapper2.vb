@@ -49,7 +49,7 @@ Public Class ClipboardWrapper2
       If disposing Then
          ' The object is being disposed, not finalized. It is safe to access other
          ' other objects (other than the base object) only from inside this block.
-         '…
+         'â€¦
       End If
 
       ' Perform cleanup chores that have to be executed in either case.

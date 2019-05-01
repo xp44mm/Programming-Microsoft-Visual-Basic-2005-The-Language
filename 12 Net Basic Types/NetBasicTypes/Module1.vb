@@ -307,8 +307,8 @@ Module Module1
       Dim s As String = ciFr.TextInfo.ToTitleCase("abcde efghi")
 
       ' Compare two strings in case-insensitive mode according to rules of Italian language.
-      Dim s1 As String = "cioè"
-      Dim s2 As String = "CIOÈ"
+      Dim s1 As String = "cioÃ¨"
+      Dim s2 As String = "CIOÃˆ"
       ' You can create a CultureInfo object on the fly.
       If String.Compare(s1, s2, True, New CultureInfo("it")) = 0 Then
          Console.WriteLine("s1 = s2")
@@ -320,7 +320,7 @@ Module Module1
    End Sub
 
    Sub TestEncodingType()
-      Dim text As String = "A Unicode string with accented vowels: àèéìòù"
+      Dim text As String = "A Unicode string with accented vowels: Ã Ã¨Ã©Ã¬Ã²Ã¹"
       Dim uni As Encoding = Encoding.Unicode
       Dim uniBytes() As Byte = uni.GetBytes(text)
       Dim ascii As Encoding = Encoding.ASCII
@@ -479,7 +479,7 @@ Module Module1
       Next
       ' Insert a string at the beginning of the buffer.
       sb.Insert(0, "List of numbers: ")
-      Console.WriteLine(sb)   ' => List of numbers: 1,2,3,4,5,6,…
+      Console.WriteLine(sb)   ' => List of numbers: 1,2,3,4,5,6,â€¦
       Console.WriteLine("Length is {0}.", sb.Length)   ' => Length is 309.
    End Sub
 
@@ -677,7 +677,7 @@ Module Module1
       If Date.Today.Day = 1 Then Console.WriteLine("First day of month")
       ' How many days have passed since January 1?
       Console.WriteLine(Date.Today.DayOfYear)
-      ' Get current time—note that ticks are included.
+      ' Get current timeâ€”note that ticks are included.
       Console.WriteLine(Date.Now.TimeOfDay)     ' => 10:39:28.3063680
 
       ' Tomorrow's date
@@ -730,7 +730,7 @@ Module Module1
    End Sub
 
    Sub FormattingDates()
-      ' This is January 6, 2005 6:30:20.500 PM—U.S. Eastern Time.
+      ' This is January 6, 2005 6:30:20.500 PMâ€”U.S. Eastern Time.
       Dim dt As Date = New Date(2005, 1, 6, 18, 30, 20, 500)
 
       ' Display a date using the LongDatePattern standard format.

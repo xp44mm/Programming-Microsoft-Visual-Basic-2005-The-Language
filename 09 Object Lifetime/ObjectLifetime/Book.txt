@@ -7,7 +7,7 @@ To make room for the new chapters, over 200 pages in the previous edition have b
 The CD now contains the complete e-book version of Programming Microsoft Visual Basic 2003 and Programming Microsoft Visual Basic 6, in addition to code samples for all chapters and the extra document files mentioned above.
 Chapter 1 - Introduction
 The section "Introduction to Visual Studio" has been moved to the companion CD.
-Chapter 2 – Modules and Variables
+Chapter 2 â€“ Modules and Variables
 The Sub Main Procedure (p. 29)
 The Sub Main procedure can take arguments and return the exit code.
 Data Types (p. 42)
@@ -16,13 +16,13 @@ The >> and << Operators (p. 47)
 This new section explains the bit shifting operators in Visual Basic .NET 2003, with a discussion of how you can use them to test, clear, and set individual bits in integer values, plus routines for rotating bits (3 pages).
 Alternative Syntaxes for Arrays and Empty Arrays (p. 61)
 Two new sections that describe how you can create an array on the fly and pass it to a procedure, and how you can declare a non-Nothing array that contains zero elements.
-Chapter 3 – Control Flow and Error Handling
+Chapter 3 â€“ Control Flow and Error Handling
 For Next and For Each Loops (p. 72)
 This new section describes the syntax for loops that has been introduced in Visual Basic .NET 2003, plus optimization techniques and tips for looping on any set of values of the controlling variable.
 The When keyword (p. 86)
 Explanation of a debugging technique that lets you trace exceptions by just adding one statement to each Try block.
 Sections on Nested exception objects and Trace listeners and Switches have been moved to the companion CD.
-Chapter 4 – Class Fundamentals
+Chapter 4 â€“ Class Fundamentals
 Trapping Events with AddHandler (p. 117)
 Included an explanation why you should always use RemoveHandler to avoid orphaned objects and consequent memory leakage.
 Trapping Events from Arrays and Collections (p. 120)
@@ -45,7 +45,7 @@ This section has been rewritten to provide better and clearer guidelines about i
 Weak Object References (p. 168)
 An improved code sample shows how to use the WeakReference object to cache the contents of a large file and have it discarded when memory is low.
 Sections on Object Pooling, Generations, and Garbage collection and Threading have been moved to the companion CD.
-Chapter 6 – Interfaces, Delegates, and Attributes
+Chapter 6 â€“ Interfaces, Delegates, and Attributes
 This chapter merges the contents of chapters 6 and 7 of first edition.
 The IComparable Interface (p. 179)
 A second version of the CompareTo method shows how you can improve performance by avoiding the creation of temporary strings.
@@ -61,7 +61,7 @@ Table 7-4 contains two new format characters: f (second fractins) and t (the fir
 The Char Type (p. 221)
 Using the Convert class to mimic the Asc, AscW, Chr, and ChrW keywords.
 Sections on IFormattable, IFormatProvider, and IcustomFormatter interfaces have been moved to companion CD.
-Chapter 8 – Arrays, Lists, and Collections
+Chapter 8 â€“ Arrays, Lists, and Collections
 The Array Class (p. 240)
 Under .NET 1.1 arrays can have 64-bit indexes; consequently, the Array class has been extended with a LongLength property that returns a Long.
 Arrays of Arrays (p. 247)
@@ -75,11 +75,11 @@ A new section that describes how you use the NameObjectCollectionBase class to m
 The IEnumerable and IEnumerator interfaces (p. 271)
 This section has been moved here from chapter 6 and expanded with additional examples. 
 Sections on nonzero-based arrays and on calling IEnumerator members have been moved to the companion CD.
-Chapter 9 – Files, Directories, and Streams
+Chapter 9 â€“ Files, Directories, and Streams
 The Directory and File classes (p. 279)
 The GetxxxxTimeUtc are new in .NET 1.1 and let you compare file timestamps in a way that is independent of the time zone, so they are good when you have files scattered over the Internet.
 Section on custom stream readers and writers has been moved to the companion CD.
-Chapter 10 – Object Serialization 
+Chapter 10 â€“ Object Serialization 
 Binary Serialization (p. 295)
 Using the formatter's AssemblyFormat property to control how the assembly name is stored in the serialized stream.
 The IDeserializationCallback Interface (p. 300)
@@ -88,7 +88,7 @@ A Custom Serialization Example (p. 302)
 This section has been improved from previous edition of the book, with more attention to what you must do to correctly implement the ISerializable interface in base and derived classes.
 The FormatterServices Helper Class (p. 305)
 This new section explains how you can use the FormatterServices class to streamline your serialization code.
-Chapter 11 – Regular Expressions 
+Chapter 11 â€“ Regular Expressions 
 Regular Expression Options (p. 314)
 This section includes an example of a complete GREP-like command line utility.
 Shared Methods (p. 321)
@@ -97,7 +97,7 @@ The CompileToAssembly Method (p. 322)
 A new section explains how you can use the underdocumented CompileToAssembly method to create DLLs that define pre-compiled Regex objects.
 Section on Capture and CaptureCollection objects has been moved to the companion CD.
 The section on building an expression evaluator with regular expressions have been moved to the companion CD.
-Chapter 12 – Threading
+Chapter 12 â€“ Threading
 Threads and Unhandled Exceptions (p. 335)
 A new section shows how you deal with unhandled exceptions in main and secondary threads.
 The SyncLock Statement (p. 340)
@@ -108,7 +108,7 @@ The Mutex Class (p. 348)
 A note shows how you can share named Mutex objects among processes.
 Section on asynchronous file operations has been moved to the companion CD.
 
-Chapter 13 – Components and Assembly
+Chapter 13 â€“ Components and Assembly
 Components  (p. 360)
 This new section shows a step-by-step approach to creating a .NET class library and an hostable components, working with multiple-projects solutions, and using the Configuration Manager. (8 pages)
 Using the DEVPATH Environment Variable (p. 373)
@@ -116,14 +116,14 @@ A new section that explains how you can simplify the development and testing sta
 Setting the Runtime Version (p. 381)
 A new section describes how you can use Visual Studio and configuration files to have a compiled assembly work under multiple versions of the .NET Framework. (3 pages)
 Sections on a real binding example, Delayed Signing and Key Containers, Command-line Tools, the AppDomain class, and the LoaderOptimization attribute have been moved to the companion CD.
-Chapter 14 – Reflection
+Chapter 14 â€“ Reflection
 Dynamic Registration of Event Handlers (p. 406)
 This new section shows how you can dynamically register an handler for an event.
 Attributes and Reflection (p. 409)
 This section has been moved here from chapter 7 (in first edition) and has been expanded with a more complex example based on the CsvSerializer class and the CsvField custom attribute.
 On-the-fly Compilation (p. 414)
 This new section shows how you can compile a piece of Visual Basic code on the fly and illustrates how you can use this technique for advanced programming techniques, such as a math expression evaluator. (3 pages)
-Chapter 15 – Windows Forms Applications
+Chapter 15 â€“ Windows Forms Applications
 Returning a Value to Windows (p. 471)
 The section about window subclassing has been expanded with an example that uses the CopyMemory API function to overcome a few limitations of subclassing in "pure" .NET code.
 The Application.EnableVisualStyles Method (p. 475)
@@ -132,7 +132,7 @@ Working with Embedded Resources (p. 479)
 This new section explains how you can add resource files to your project and access these resources from inside the application, without having to distribute additional data files.
 Form as Child Controls (p. 483)
 This new section describes the underdocumented TopLevel property and shows how you can make a form a child of another form and achieve the same effect of the VB6's Repeater control (that has been discontinued in VB.NET). (3 pages)
-Chapter 16 – Windows Forms Controls
+Chapter 16 â€“ Windows Forms Controls
 In first edition, this chapter covered the creation of custom controls, which have been moved to chapter 18.
 The LinkLabel Control (p. 489)
 A new tip about using the LinkLabel's Click event to launch Internet Explorer on a given URL.
@@ -144,9 +144,9 @@ The PropertyGrid Control (p. 516)
 This new section covers the underdocumented PropertyGrid control and shows how you can use it to let your end users interactively modify the properties of your objects and controls.
 The DataGrid Control (p. 532)
 This new section covers the all-useful DataGrid control, how you can format its columns, and even how you can create your custom column styles that contain one or more controls of your choice. (5 pages)
-Chapter 17 – GDI+
+Chapter 17 â€“ GDI+
 No significant changes in this chapter.
-Chapter 18 – Custom Windows Forms Controls
+Chapter 18 â€“ Custom Windows Forms Controls
 Design-time Debugging (p. 595)
 A new section that explains how you can debug design-time events in custom controls.
 Adding Attributes (p. 598)
@@ -165,7 +165,7 @@ Data-Binding Support (p. 631)
 This new section shows how you can add support for data-binding to your custom controls, and includes a complete example of a data-bound ListView control. (3 pages)
 Design-time and Run-time Licensing (p. 634)
 The description of a different custom licensing schema has been added.
-Chapter 19 – Advanced Win32 Techniques
+Chapter 19 â€“ Advanced Win32 Techniques
 In first edition this chapter included a discussion on Windows services and the ServiceController type, which are now covered in Chapter 20.
 The SystemEvents class (p. 646)
 A description of the SystemEvents class and how you can use it to trap important system-level events, for example when the user session ends or display settings change.

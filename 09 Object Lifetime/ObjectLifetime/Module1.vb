@@ -39,7 +39,7 @@ Module Module1
       ' Make it survive a second garbage collection.
       GC.Collect() : GC.WaitForPendingFinalizers()
       Console.WriteLine(GC.GetGeneration(s))          ' => 2
-      ' Subsequent garbage collections don’t increment the generation counter.
+      ' Subsequent garbage collections donâ€™t increment the generation counter.
       GC.Collect() : GC.WaitForPendingFinalizers()
       Console.WriteLine(GC.GetGeneration(s))          ' => 2
    End Sub
@@ -71,7 +71,7 @@ Module Module1
             If i = 50 Then aPerson = Nothing
          Else
             ' Do something else here, but don't use the aPerson variable.
-            '…
+            'â€¦
             ' simulate a GC because of memory shortage
             If i = 99 Then GC.Collect() : GC.WaitForPendingFinalizers()
          End If
@@ -82,10 +82,10 @@ Module Module1
       ' Read and cache the contents of the "book.txt" file.
       Dim cf As New CachedFile("book.txt")
       Console.WriteLine(cf.GetText())
-      '…
+      'â€¦
       ' Uncomment next line to force a garbage collection.
       ' GC.Collect(): GC.WaitForPendingFinalizers()
-      '…
+      'â€¦
       ' Read the contents again some time later.
       ' (No disk access is performed, unless a GC has occurred in the meantime.)
       Console.WriteLine(cf.GetText())

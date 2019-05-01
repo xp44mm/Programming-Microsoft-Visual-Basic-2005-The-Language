@@ -3,7 +3,7 @@ Public Class ClipboardWrapperEx
 
    ' Insert here regular methods, some of which may allocate additional
    ' unmanaged resources.
-   '…
+   'â€¦
    ' The only method we need to override to implement the Dispose-Finalize
    ' pattern for this class.
    Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -15,11 +15,11 @@ Public Class ClipboardWrapperEx
          If disposing Then
             ' The object is being disposed, not finalized. It is safe to access other
             ' other objects (other than the base object) only from inside this block.
-            '…
+            'â€¦
          End If
 
          ' Perform clean up chores that have to be executed in either case.
-         '…
+         'â€¦
       Finally
          ' Call the base class's Dispose method in all cases.
          MyBase.Dispose(disposing)
